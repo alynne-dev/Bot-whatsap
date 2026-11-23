@@ -1,4 +1,4 @@
-from cadastro import listar_usuarios, quantidade_usuarios
+from cadastro import listar_usuarios, quantidade_usuarios, cadastrar_usuario
 
 print("🤖 Olá! Sou o seu bot de Estudos")
 nome = input("Qual é o seu nome? ")
@@ -11,6 +11,8 @@ def mostrar_menu():
     print("3. Ajuda")
     print("4. Sair")
     print("5. Quantidade de usuarios cadastrados")
+    print("6. Cadastrar novo usuario")
+
 
 def responder_mensagem(opção):
     
@@ -24,6 +26,10 @@ def responder_mensagem(opção):
         return "Até logo! Se precisar de mais alguma coisa, é só chamar."
     elif opção == "5":
         return "Total de usuarios cadastrados: " + str(quantidade_usuarios())
+    elif opção == "6":
+        novo_usuario = input("Digite o nome do novo usuario: ")
+        cadastrar_usuario(novo_usuario)
+        return "Cadastro finalizado!"
     else:
         return "Desculpe, não entendi sua mensagem. Por favor, digite 'menu' para ver as opções disponíveis."
 
