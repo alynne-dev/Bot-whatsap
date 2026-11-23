@@ -25,7 +25,7 @@ def listar_usuarios():
         lista = []
         for usuario in usuarios:
             lista.append(usuario.strip())
-            return lista
+        return lista
  
     except FileNotFoundError:
         return[]

@@ -367,6 +367,28 @@
 # Testes no terminal (na pasta do projeto):
 # py -c "from cadastro import listar_usuarios; print(listar_usuarios())"
 # py -c "from cadastro import quantidade_usuarios; print(quantidade_usuarios())"
+#==================================
+# AULA 10 - INTEGRACAO COM bot.py
+#==================================
+# No inicio de bot.py, importamos:
+# from cadastro import listar_usuarios, quantidade_usuarios
+# A funcao mostrar_menu() passou a exibir a opcao 5 para contar usuarios.
+# Em responder_mensagem(), a opcao 5 usa:
+# return "Total de usuarios cadastrados: " + str(quantidade_usuarios())
+# str() converte o numero em texto para concatenacao.
+# Testamos no terminal e o bot mostrou a quantidade correta (4 usuarios).
+
+# CORRECAO / APRENDIZADO
+# Se return lista ficar dentro do for, a funcao retorna no primeiro item.
+# return lista deve ficar fora do for, para percorrer todos os nomes antes
+# de devolver a lista.
+
+# COMANDOS DE TESTE NO TERMINAL (na pasta do projeto)
+# py -c "from cadastro import buscar_usuario; print(buscar_usuario('Maria'))"
+# py -c "from cadastro import cadastrar_usuario; cadastrar_usuario('NovoNome')"
+# py -c "from cadastro import listar_usuarios; print(listar_usuarios())"
+# py -c "from cadastro import quantidade_usuarios; print(quantidade_usuarios())"
+
 # ==========================================
 # DICAS IMPORTANTES
 # ==========================================
