@@ -388,7 +388,12 @@
 # py -c "from cadastro import cadastrar_usuario; cadastrar_usuario('NovoNome')"
 # py -c "from cadastro import listar_usuarios; print(listar_usuarios())"
 # py -c "from cadastro import quantidade_usuarios; print(quantidade_usuarios())"
-
+#============================================
+#AULA 11 - FAZER QUIZ
+#===========================================s
+#Dicionário: {"campo": valor}, uma ficha com campos nomeados
+# enumerate(): percorre uma lista dando o número de cada item
+# funcao vs funcao(): sem parênteses aponta para a função, com parênteses executa
 # ==========================================
 # DICAS IMPORTANTES
 # ==========================================
